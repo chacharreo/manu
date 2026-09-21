@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manu</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #e8f5e9; /* Verde claro esperanza */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #2c3e50;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px 15px;
+    }
+
+    main {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 700px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+      padding: 40px 25px;
+      text-align: center;
+    }
+
+    .foto-container {
+      margin-bottom: 25px;
+    }
+
+    .foto-perfil {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      border: 4px solid #ffffff;
+      outline: 2px solid #c8e6c9;
+    }
+
+    .texto {
+      margin-bottom: 30px;
+    }
+
+    .texto p {
+      font-size: 1.15rem;
+      margin-bottom: 14px;
+      color: #37474f;
+    }
+
+    .texto p.destacado {
+      font-weight: 600;
+      color: #1b5e20;
+    }
+
+    .correo-container {
+      background-color: #f1f8e9;
+      border: 1px solid #dcedc8;
+      border-radius: 12px;
+      padding: 16px 20px;
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    .correo-label {
+      font-size: 0.9rem;
+      color: #558b2f;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .correo-enlace {
+      color: #2e7d32;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+      word-break: break-all;
+      transition: color 0.2s ease;
+    }
+
+    .correo-enlace:hover {
+      color: #1b5e20;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 28px 18px;
+      }
+      .foto-perfil {
+        width: 180px;
+        height: 180px;
+      }
+      .texto p {
+        font-size: 1.05rem;
+      }
+      .correo-enlace {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="foto-container">
+      <img src="manu.jpg" alt="Manu" class="foto-perfil">
+    </div>
+
+    <div class="texto">
+      <p class="destacado">Si estás viendo esto es porque confío mucho en ti.</p>
+      <p>Este soy yo.</p>
+      <p>Escríbeme por aquí solo si te ves muy agobiada y necesitas de mí.</p>
+    </div>
+
+    <div class="correo-container">
+      <div class="correo-label">Correo privado</div>
+      <a href="mailto:manuelconfidencial@gmail.com" class="correo-enlace">manuelconfidencial@gmail.com</a>
+    </div>
+  </main>
+
+</body>
+</html>
